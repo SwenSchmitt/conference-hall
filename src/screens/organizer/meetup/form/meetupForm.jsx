@@ -9,7 +9,9 @@ import { required } from 'components/form/validators'
 
 import './meetupForm.css'
 
-const MeetupForm = ({ onDelete, onSubmit, initialValues, submitting }) => (
+const MeetupForm = ({
+  onDelete, onSubmit, initialValues, submitting,
+}) => (
   <Form onSubmit={onSubmit} initialValues={initialValues}>
     {({ handleSubmit, pristine }) => (
       <form className="meetup-form card">
